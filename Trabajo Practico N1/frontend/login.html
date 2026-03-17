@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP1 - Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container auth-container">
+    <h1>Ingreso a la app</h1>
+    <form id="loginForm" class="card" novalidate>
+      <label for="usuario">Usuario</label>
+      <input id="usuario" name="usuario" maxlength="20" required>
+
+      <label for="clave">Password</label>
+      <input id="clave" name="clave" type="password" maxlength="20" required>
+
+      <button type="submit">Ingresar</button>
+      <p id="mensaje" class="mensaje"></p>
+    </form>
+  </main>
+
+  <script src="login.js"></script>
+</body>
+</html>

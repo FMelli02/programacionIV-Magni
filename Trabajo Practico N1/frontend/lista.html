@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP1 - Lista de Usuarios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header class="toolbar">
+      <h1>Lista de usuarios</h1>
+      <div class="search-box">
+        <input id="searchUsuario" type="text" maxlength="20" placeholder="Buscar por usuario">
+        <button id="btnBuscar" type="button">Buscar</button>
+        <button id="btnLimpiar" type="button" class="secondary">Limpiar</button>
+      </div>
+    </header>
+
+    <section class="card">
+      <p id="mensaje" class="mensaje"></p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Usuario</th>
+              <th>Bloqueado</th>
+              <th>Apellido</th>
+              <th>Nombre</th>
+              <th>Bloquear</th>
+              <th>Desbloquear</th>
+            </tr>
+          </thead>
+          <tbody id="tbodyUsuarios"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="lista.js"></script>
+</body>
+</html>
