@@ -55,7 +55,13 @@ body {
   padding: 0;
 }
 
-/* Forzar inputs/selects con fondo claro independiente del color-scheme del OS */
+/* Forzar todos los controles nativos en modo claro, independiente del OS */
+input,
+select,
+textarea {
+  color-scheme: light;
+}
+
 input:not([type="radio"]):not([type="checkbox"]),
 select,
 textarea {

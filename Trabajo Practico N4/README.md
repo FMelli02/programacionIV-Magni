@@ -38,7 +38,7 @@ pip install -r requirements.txt
 ### Iniciar el servidor
 
 ```bash
-uvicorn main:app --reload
+uvicorn main:app --reload --reload-exclude venv
 ```
 
 El servidor queda corriendo en **http://localhost:8000**
@@ -65,12 +65,12 @@ La aplicación queda disponible en **http://localhost:5173**
 
 ## Endpoints disponibles
 
-| Método   | Ruta                       | Descripción                        |
-|----------|----------------------------|------------------------------------|
-| `GET`    | `/participantes`           | Obtiene la lista de participantes  |
-| `POST`   | `/participantes`           | Crea un nuevo participante         |
-| `DELETE` | `/participantes/{id}`      | Elimina un participante por ID     |
-| `DELETE` | `/participantes`           | Elimina todos los participantes    |
+| Método   | Ruta                  | Descripción                       |
+| -------- | --------------------- | --------------------------------- |
+| `GET`    | `/participantes`      | Obtiene la lista de participantes |
+| `POST`   | `/participantes`      | Crea un nuevo participante        |
+| `DELETE` | `/participantes/{id}` | Elimina un participante por ID    |
+| `DELETE` | `/participantes`      | Elimina todos los participantes   |
 
 ---
 
