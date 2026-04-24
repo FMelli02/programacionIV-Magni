@@ -41,7 +41,7 @@ function App() {
       <div className="max-w-6xl mx-auto p-6">
         {/* Contador dinámico */}
         <div className="mb-6 flex items-center justify-between">
-          <span className="text-lg font-semibold text-gray-700">
+          <span className="text-lg font-semibold text-gray-900">
             Mostrando {participantesFiltrados.length} de {participantes.length} participantes
           </span>
           <button
@@ -64,7 +64,7 @@ function App() {
 
         {/* Lista de Participantes */}
         <div>
-          <h2 className="text-xl font-bold mb-6">Participantes Registrados</h2>
+          <h2 className="text-xl font-bold mb-6 text-gray-900">Participantes Registrados</h2>
 
           {participantesFiltrados.length === 0 ? (
             <p className="text-center text-gray-500 text-lg">No hay participantes</p>

@@ -55,6 +55,20 @@ body {
   padding: 0;
 }
 
+/* Forzar inputs/selects con fondo claro independiente del color-scheme del OS */
+input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea {
+  background-color: #ffffff !important;
+  color: #111827 !important;
+  border-color: #d1d5db !important;
+}
+
+/* Forzar títulos h2 visibles en secciones con fondo blanco */
+.bg-white h2 {
+  color: #111827 !important;
+}
+
 h1, h2 {
   font-family: var(--heading);
   font-weight: 500;
